@@ -219,17 +219,18 @@
             izz="0.01"/>
       </inertial>
     </link>
-    
+
     <xacro:Livox_Mid_gazebo_sensor/>
+  
   </xacro:macro>
-    
+
   <xacro:Livox_Mid360/>
 
   <joint name="livox_base_joint" type="fixed">
       <parent link="base_link"/>
       <child link="livox_scan"/>
-      <origin rpy="0 0 1.5707"
-              xyz="-0.05 0.0 0.12"/>
+      <origin rpy="0 0 0"
+              xyz="-0.05 0.0 0.09"/>
   </joint>
 
 </robot>
